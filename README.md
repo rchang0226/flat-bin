@@ -4,10 +4,9 @@ Script that generates launchers for flatpaks in a bin folder, so they can be use
 ## Installation
 
 ```
-git clone https://github.com/AngelJumbo/flat-bin
+git clone https://github.com/rchang0226/flat-bin.git
 cd flat-bin
-sudo cp ./flat-bin /usr/local/bin/flat-bin
-
+./flat-bin
 ```
 
 ## Usage
