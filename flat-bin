@@ -4,7 +4,7 @@ binfolder=$HOME/.local/bin/
 
 flatpak list --app | while read -r app
 do
-  appname="$(echo "$app" | awk -F '\t' '{print $1}')-Flatpak"
+  appname="$(echo "$app" | awk -F '\t' '{print $1}')"
   appname="$(echo "$appname" | sed 's/ /-/g')"
   applaunchname=$(echo "$app" | awk -F '\t' '{print $2}')
   appdir="$binfolder$appname"
@@ -12,7 +12,7 @@ do
   touch "$appdir"
   echo "#!/bin/sh
 
-flatpak run $applaunchname
+flatpak run $applaunchname \"\$@\"
 
   " > "$appdir"
   #echo "$appdir"
