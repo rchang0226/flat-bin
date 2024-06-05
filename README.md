@@ -17,4 +17,4 @@ By default the script generates the launchers in $HOME/.local/bin/ so that folde
 
 Create the folder if you don't have it already. To add to PATH, do ```echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc```. 
 
-You should run this script every time that you install a flatpak app.
+You should run this script every time that you install a flatpak app. If you uninstall a flatpak application, you need to manually delete the sh script from ~/.local/bin.
