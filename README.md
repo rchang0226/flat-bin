@@ -9,7 +9,12 @@ cd flat-bin
 ./flat-bin
 ```
 
+For ease of use, you can add a symbolic link. Do ```ln -s ~/<PATH-TO-FILE> ~/.local/bin/flat-bin```.
+Then you can just type ```flat-bin``` in the terminal anytime you want to run the script. 
+
 ## Usage
 By default the script generates the launchers in $HOME/.local/bin/ so that folder should be part of your PATH.
+
+Create the folder if you don't have it already. To add to PATH, do ```echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc```. 
 
 You should run this script every time that you install a flatpak app.
